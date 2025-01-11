@@ -49,6 +49,57 @@
             margin-top: 23px;
             margin-bottom: 23px;
         }
+
+        .col-1{
+            background-color: #006A6A;
+            width: 50%;
+            padding: 20px;
+            color: #FFF;
+        }
+
+        .col-2{
+            background-color: #009E9E;
+            width: 50%;
+            padding: 20px;
+            color: #FFFFFF;
+        }
+
+        .subscription-title {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .price{
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .month {
+            font-size: 15px;
+            font-style:italic;
+            margin-left: 20px;
+        }
+
+        .button {
+            width: 100%;
+            padding: 15px 33px;
+
+            color: #006A6A;
+            background-color: #E9E9E9;
+
+            font-size: 19px;
+
+            border-radius: 5px;
+            border:none;
+
+            margin-top: 20px;
+
+            cursor: pointer;
+        }
+        .button:hover{
+            background-color: #CCCCCC;
+        }
     </style>
 </head>
 <body>
@@ -67,10 +118,21 @@
             </div>
         </div>
         <div class="flex-container">
-            <div>
-                Coluna 1
+            <div class="col-1">
+                <div class="subscription-title">
+                    Assinatura Mensal:
+                </div>
+                <div>
+                    <span class="price">R$ 99,99</span>
+                    <span class="month">por mês.</span> 
+                </div>
+                <div>
+                    Cancele a qualquer momento;
+                </div>
+
+                <button class="button">Assine Agora</button>
             </div>
-            <div>
+            <div class="col-2">
                 Coluna 2
             </div>
         </div>
