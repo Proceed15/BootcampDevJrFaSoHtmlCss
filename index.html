@@ -19,8 +19,9 @@
         .container {
             background-color: #E9E9E9;
             margin: auto;
-            margin-top: 500px;
-            /*margin-left: 70px;*/
+            margin-top: 100px;
+            /*margin-top: 500px;
+            margin-left: 70px;*/
             width: 600px;
 
             box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.6);
@@ -29,13 +30,13 @@
             overflow: hidden;
         }
         .header {
-            padding: 40px;
+            padding: 2.5rem;
         }
         .flex-container {
             display: flex;
             background-color: #006A6A;
             justify-content: space-around;
-            padding: 20px;
+            padding: 1.3rem;
         }
         .header-title {
             color: #006F6F;
@@ -44,56 +45,56 @@
         }
         .header-subtitle {
             color: #006A6A;
-            font-size: 19px;
+            font-size: 1.2rem;
             font-weight: 500;
-            margin-top: 23px;
-            margin-bottom: 23px;
+            margin-top: 1.3rem;
+            margin-bottom: 1.3rem;
         }
 
         .col-1{
             background-color: #006A6A;
             width: 50%;
-            padding: 20px;
+            padding: 1.2rem;
             color: #FFF;
         }
 
         .col-2{
             background-color: #009E9E;
             width: 55%;
-            padding: 10px;
+            padding: 1.2rem;
             color: #FFFFFF;
         }
 
         .subscription-title {
-            font-size: 20px;
+            font-size: 1.25rem;
             text-align: center;
-            margin-bottom: 15px;
+            margin-bottom: 2rem;
         }
 
         .price{
-            font-size: 26px;
+            font-size: 1.63rem;
             font-weight: 700;
         }
 
         .month {
-            font-size: 15px;
+            font-size: 0.94rem;
             font-style:italic;
-            margin-left: 20px;
+            margin-left: 1rem;
         }
 
         .button {
             width: 100%;
-            padding: 15px 33px;
+            padding: 1rem 3rem;
 
             color: #006A6A;
             background-color: #E9E9E9;
 
-            font-size: 19px;
+            font-size: 1.2rem;
 
             border-radius: 5px;
             border:none;
 
-            margin-top: 20px;
+            margin-top: 2rem;
 
             cursor: pointer;
         }
@@ -103,6 +104,22 @@
         .image-group{
             text-align: center;
             color:aliceblue;
+        }
+
+        @media(max-width: 620px){
+            html {
+                font-size: 14px;
+            }
+            .flex-container {
+                flex-direction: column;
+            }
+            .col-1, .col-2 {
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .container{
+                width: 95%;
+            }
         }
     </style>
 </head>
@@ -138,7 +155,7 @@
             </div>
             <div class="col-2">
                 <div class="image-group">
-                    <object data="groups_57dp_5F6368_FILL0_wght400_GRAD0_opsz48.svg" type="image/svg+xml"></object>
+                    <object data="groups_51dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg" type="image/svg+xml"></object>
                 </div>
                 <div>
                     Você terá acesso:
